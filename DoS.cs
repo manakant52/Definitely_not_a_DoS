@@ -21,12 +21,6 @@ class Program
                 {
                     HttpResponseMessage response = await client.GetAsync("https://en-ege.sdamgia.ru/test?id=2588500");
 
-
-                    // Получаем ответ в виде строки
-                    string responseBody = await response.Content.ReadAsStringAsync();
-
-                    // Выводим ответ на экран
-                    Console.WriteLine($"Response {i + 1}: {responseBody}");
                 }
             }
             catch (HttpRequestException ex)
